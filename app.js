@@ -11,12 +11,13 @@ app.use(express.json());
 
 //MySQL connection
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'apinode',
+    host: 'us-cdbr-east-04.cleardb.com',
+    user: 'b3be6737765176',
+    password: '3ba2ec56',
+    database: 'heroku_3bc0c18972b169d',
     port: 3306
 });
+// mysql://b3be6737765176:3ba2ec56@us-cdbr-east-04.cleardb.com/heroku_3bc0c18972b169d?reconnect=true
 //-----------------------------------------------------
 //Routes
 app.get('/', (req, res) => {
