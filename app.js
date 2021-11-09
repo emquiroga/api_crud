@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(express.json());
 
-//MySQL connection
+//Heroku connection
 const connection = mysql.createConnection({
     host: 'us-cdbr-east-04.cleardb.com',
     user: 'b3be6737765176',
@@ -81,6 +81,5 @@ connection.connect(error => {
     if (error) throw error;
     console.log('Connected to database');
 });
-//------------------------------------------------------
 
 app.listen(PORT, () => {console.log(`Server is running on port ${PORT}`)});
