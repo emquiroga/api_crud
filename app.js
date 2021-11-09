@@ -17,8 +17,7 @@ const connection = mysql.createConnection({
     database: 'heroku_3bc0c18972b169d',
     port: 3306
 });
-// mysql://b3be6737765176:3ba2ec56@us-cdbr-east-04.cleardb.com/heroku_3bc0c18972b169d?reconnect=true
-//-----------------------------------------------------
+
 //Routes
 app.get('/', (req, res) => {
     res.send('Welcome to my API!');
